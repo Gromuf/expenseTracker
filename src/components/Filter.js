@@ -1,7 +1,4 @@
-
-
 const Filter = ({ selector }) => {
-
 
     return (
         <>
