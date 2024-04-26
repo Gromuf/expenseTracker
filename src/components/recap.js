@@ -94,22 +94,26 @@ const Recap = () => {
                 </tfoot>
             </table>
             {ProductId !== null && (
-                <div className="">
+                <div className="field">
                     <h2>Modifier le produit</h2>
-                    <input
-                        className="input"
-                        type="text"
-                        value={newProductDescr}
-                        onChange={descrChange}
-                        placeholder="Nouvelle description"
-                    />
-                    <input
-                        className="input"
-                        type="number"
-                        value={newProductAmount}
-                        onChange={amountChange}
-                        placeholder="Nouveau prix"
-                    />
+                    <div className="field">
+                        <input
+                            className="input"
+                            type="text"
+                            value={newProductDescr}
+                            onChange={descrChange}
+                            placeholder="Nouvelle description"
+                        />
+                    </div>
+                    <div className="field">
+                        <input
+                            className="input"
+                            type="number"
+                            value={newProductAmount}
+                            onChange={amountChange}
+                            placeholder="Nouveau prix"
+                        />
+                    </div>
                     <div className="field">
                         <Selector
                             selector={['Groceries', 'Utilities', 'Entertainment']}
